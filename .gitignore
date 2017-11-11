@@ -1,0 +1,11 @@
+*.vcxproj.user
+*.VC.db
+*.VC.opendb
+*.suo
+/.vs
+Debug
+Release
+x64
+/deps/SDL
+/deps/SDL-image
+*.dll
