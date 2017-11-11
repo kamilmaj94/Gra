@@ -9,3 +9,4 @@ x64
 /deps/SDL
 /deps/SDL-image
 *.dll
+~AutoRecover*
