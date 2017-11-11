@@ -10,3 +10,5 @@ x64
 /deps/SDL-image
 *.dll
 ~AutoRecover*
+/Bin
+/Obj
