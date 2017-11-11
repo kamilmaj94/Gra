@@ -12,3 +12,4 @@ x64
 ~AutoRecover*
 /Bin
 /Obj
+/ipch
