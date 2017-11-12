@@ -193,6 +193,7 @@ copy /B "$(SolutionDir)deps\SDL-image\lib\$(PlatformShortName)\zlib1.dll" "$(Tar
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Dot.cpp" />
     <ClCompile Include="Globals.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="PCH.cpp">
@@ -205,6 +206,7 @@ copy /B "$(SolutionDir)deps\SDL-image\lib\$(PlatformShortName)\zlib1.dll" "$(Tar
     <ClCompile Include="Utils.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Dot.hpp" />
     <ClInclude Include="Globals.hpp" />
     <ClInclude Include="PCH.hpp" />
     <ClInclude Include="Texture.hpp" />
