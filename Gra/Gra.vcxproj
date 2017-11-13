@@ -195,6 +195,7 @@ copy /B "$(SolutionDir)deps\SDL-image\lib\$(PlatformShortName)\zlib1.dll" "$(Tar
   <ItemGroup>
     <ClCompile Include="Dot.cpp" />
     <ClCompile Include="Globals.cpp" />
+    <ClCompile Include="Ground.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="PCH.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -208,6 +209,7 @@ copy /B "$(SolutionDir)deps\SDL-image\lib\$(PlatformShortName)\zlib1.dll" "$(Tar
   <ItemGroup>
     <ClInclude Include="Dot.hpp" />
     <ClInclude Include="Globals.hpp" />
+    <ClInclude Include="Ground.hpp" />
     <ClInclude Include="PCH.hpp" />
     <ClInclude Include="Texture.hpp" />
     <ClInclude Include="Utils.hpp" />
