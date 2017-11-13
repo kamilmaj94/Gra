@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "430f915b_ee898dbd",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1002655
+      },
+      "writtenOn": "2017-11-13T17:58:54Z",
+      "side": 1,
+      "message": "Add Change-Id to this commit message",
+      "revId": "d092cb897b7a0fa9880a1dbb4406b01c92e6fcfa",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "84c79c7d_34971403",
+        "filename": "README.MD",
+        "patchSetId": 1
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1002655
+      },
+      "writtenOn": "2017-11-13T17:58:54Z",
+      "side": 1,
+      "message": "Add some more info about this project (what this game is gonna be like etc)",
+      "revId": "d092cb897b7a0fa9880a1dbb4406b01c92e6fcfa",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
