@@ -3,7 +3,7 @@
 #include "Texture.hpp"
 #include "Globals.hpp"
 #include "Dot.hpp"
-
+#include "Ground.hpp"
 
 bool Init()
 {
@@ -72,6 +72,7 @@ int main(int argc, char* args[])
 
     SDL_Event e;
     Dot dot;
+    Ground floor;
 
     if (!dot.Init())
     {
@@ -91,18 +92,16 @@ int main(int argc, char* args[])
 
             dot.HandleEvent(e);
         }
-
         dot.Move();
-
         SDL_SetRenderDrawColor(gRenderer, 0xFF, 0xFF, 0xFF, 0xFF);
         SDL_RenderClear(gRenderer);
-
+        /*
+            Objects to render are going here
+        */
         dot.Render();
-
+        floor.Render();
         SDL_RenderPresent(gRenderer);
     }
-
     Close();
-
     return 0;
 }
