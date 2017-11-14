@@ -89,15 +89,15 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(SolutionDir)\deps\SDL\include;$(SolutionDir)\deps\SDL-image\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\deps\SDL\include;$(SolutionDir)\deps\SDL-image\include;$(SolutionDir)\deps\BOX2D\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>PCH.hpp</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;Box2D.lib;SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
-      <AdditionalLibraryDirectories>$(SolutionDir)\deps\SDL\lib\$(PlatformShortName);$(SolutionDir)\deps\SDL-image\lib\$(PlatformShortName);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)\deps\SDL\lib\$(PlatformShortName);$(SolutionDir)\deps\SDL-image\lib\$(PlatformShortName);$(SolutionDir)\deps\BOX2D\Build\vs2012\bin\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
       <Command>copy /B "$(SolutionDir)deps\SDL\lib\$(PlatformShortName)\SDL2.dll" "$(TargetDir)"
@@ -114,15 +114,15 @@ copy /B "$(SolutionDir)deps\SDL-image\lib\$(PlatformShortName)\zlib1.dll" "$(Tar
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(SolutionDir)\deps\SDL\include;$(SolutionDir)\deps\SDL-image\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\deps\SDL\include;$(SolutionDir)\deps\SDL-image\include;$(SolutionDir)\deps\BOX2D\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>PCH.hpp</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)\deps\SDL\lib\$(PlatformShortName);$(SolutionDir)\deps\SDL-image\lib\$(PlatformShortName);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;Box2D.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)\deps\SDL\lib\$(PlatformShortName);$(SolutionDir)\deps\SDL-image\lib\$(PlatformShortName);$(SolutionDir)\deps\BOX2D\Build\vs2012\bin\Release;$(SolutionDir)\deps\BOX2D\Build\vs2012\bin\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
       <Command>copy /B "$(SolutionDir)deps\SDL\lib\$(PlatformShortName)\SDL2.dll" "$(TargetDir)"
@@ -141,7 +141,7 @@ copy /B "$(SolutionDir)deps\SDL-image\lib\$(PlatformShortName)\zlib1.dll" "$(Tar
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(SolutionDir)\deps\SDL\include;$(SolutionDir)\deps\SDL-image\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\deps\SDL\include;$(SolutionDir)\deps\SDL-image\include;$(SolutionDir)\deps\BOX2D\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>PCH.hpp</PrecompiledHeaderFile>
     </ClCompile>
@@ -149,9 +149,9 @@ copy /B "$(SolutionDir)deps\SDL-image\lib\$(PlatformShortName)\zlib1.dll" "$(Tar
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;Box2D.lib;SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Console</SubSystem>
-      <AdditionalLibraryDirectories>$(SolutionDir)\deps\SDL\lib\$(PlatformShortName);$(SolutionDir)\deps\SDL-image\lib\$(PlatformShortName);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>$(SolutionDir)\deps\SDL\lib\$(PlatformShortName);$(SolutionDir)\deps\SDL-image\lib\$(PlatformShortName);$(SolutionDir)\deps\BOX2D\Build\vs2012\bin\$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
       <Command>copy /B "$(SolutionDir)deps\SDL\lib\$(PlatformShortName)\SDL2.dll" "$(TargetDir)"
@@ -170,7 +170,7 @@ copy /B "$(SolutionDir)deps\SDL-image\lib\$(PlatformShortName)\zlib1.dll" "$(Tar
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <SDLCheck>true</SDLCheck>
-      <AdditionalIncludeDirectories>$(SolutionDir)\deps\SDL\include;$(SolutionDir)\deps\SDL-image\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)\deps\SDL\include;$(SolutionDir)\deps\SDL-image\include;$(SolutionDir)\deps\BOX2D\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PrecompiledHeader>Use</PrecompiledHeader>
       <PrecompiledHeaderFile>PCH.hpp</PrecompiledHeaderFile>
     </ClCompile>
@@ -179,8 +179,8 @@ copy /B "$(SolutionDir)deps\SDL-image\lib\$(PlatformShortName)\zlib1.dll" "$(Tar
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
       <SubSystem>Windows</SubSystem>
-      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>$(SolutionDir)\deps\SDL\lib\$(PlatformShortName);$(SolutionDir)\deps\SDL-image\lib\$(PlatformShortName);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>SDL2.lib;SDL2main.lib;SDL2_image.lib;Box2D.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>$(SolutionDir)\deps\SDL\lib\$(PlatformShortName);$(SolutionDir)\deps\SDL-image\lib\$(PlatformShortName);$(SolutionDir)\deps\BOX2D\Build\vs2012\bin\Release;$(SolutionDir)\deps\BOX2D\Build\vs2012\bin\Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
       <Command>copy /B "$(SolutionDir)deps\SDL\lib\$(PlatformShortName)\SDL2.dll" "$(TargetDir)"

@@ -83,5 +83,5 @@ void Texture::Render(int x, int y, SDL_Rect* clip, double angle, SDL_Point* cent
         renderQuad.h = clip->h;
     }
 
-    SDL_RenderCopyEx(gRenderer, mTexture, clip, &renderQuad, angle, center, flip);
+    SDL_RenderCopyEx(gRenderer, mTexture, clip, &renderQuad, angle*(180.0f/PI), center, flip);
 }

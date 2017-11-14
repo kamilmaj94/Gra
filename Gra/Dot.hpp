@@ -9,21 +9,29 @@ class Dot
 public:
     Dot();
 
-    bool Init();
+    bool Init(b2World& world);
     void HandleEvent( SDL_Event& e );
     void Move();
     void Render() const;
+    b2Body *GetBody();
+
+    void SetPosition(b2Vec2 position);
+    void SetVelocity(b2Vec2 velocity);
+    void SetAngle(float32 angle);
+
+    b2Vec2 GetPosition();
+    b2Vec2 GetVelocity();
 
 private:
     static const int DOT_WIDTH = 20;
     static const int DOT_HEIGHT = 20;
-    static const int DOT_VEL = 10;
+    static const int DOT_VEL = 1000000;
 
-    int mPosX;
-    int mPosY;
-    int mVelX;
-    int mVelY;
+    b2Vec2 position;
+    b2Vec2 velocity;
+    float32 angle;
 
-    // TODO temporary - should probably capture a pointer to texture
     Texture mDotTexture;
+
+    b2Body* body;
 };

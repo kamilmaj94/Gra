@@ -4,6 +4,9 @@
 #include <SDL.h>
 #include <SDL_image.h>
 
+//Box2D
+#include <Box2D.h>
+
 // WinAPI
 #include <Windows.h>
 
