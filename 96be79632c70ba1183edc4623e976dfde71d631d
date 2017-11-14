@@ -1,0 +1,256 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "34f1e687_4921c0f5",
+        "filename": "Gra/Ground.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1002655
+      },
+      "writtenOn": "2017-11-14T07:43:42Z",
+      "side": 1,
+      "message": "I would prefer to keep an include related to this module right below \"PCH.hpp\". If you need Globals in Ground.hpp, include it there.",
+      "revId": "96be79632c70ba1183edc4623e976dfde71d631d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ef26a207_1a4b512a",
+        "filename": "Gra/Ground.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1002655
+      },
+      "writtenOn": "2017-11-14T07:43:42Z",
+      "side": 1,
+      "message": "Remove",
+      "range": {
+        "startLine": 10,
+        "startChar": 38,
+        "endLine": 10,
+        "endChar": 76
+      },
+      "revId": "96be79632c70ba1183edc4623e976dfde71d631d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "eb1dea1b_61bb1a6a",
+        "filename": "Gra/Ground.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1002655
+      },
+      "writtenOn": "2017-11-14T07:43:42Z",
+      "side": 1,
+      "message": "No need to set it each render - just set it in the constructor.",
+      "range": {
+        "startLine": 15,
+        "startChar": 0,
+        "endLine": 18,
+        "endChar": 30
+      },
+      "revId": "96be79632c70ba1183edc4623e976dfde71d631d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4f8ef0d6_54d0c8cf",
+        "filename": "Gra/Ground.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1002655
+      },
+      "writtenOn": "2017-11-14T07:43:42Z",
+      "side": 1,
+      "message": "DrawRect is not needed - it only draws lines around our previously drawn rectangle to create a border, which still will be black.\n\nEither remove it or, if you want to make the ground \"stand out\" by adding a border to it, set another color befre calling DrawRect.",
+      "range": {
+        "startLine": 21,
+        "startChar": 4,
+        "endLine": 21,
+        "endChar": 46
+      },
+      "revId": "96be79632c70ba1183edc4623e976dfde71d631d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "794ae425_796dcaec",
+        "filename": "Gra/Ground.hpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1002655
+      },
+      "writtenOn": "2017-11-14T07:43:42Z",
+      "side": 1,
+      "message": "I think these values could be easily kept inside \"prostokat\" struct. Remove.",
+      "range": {
+        "startLine": 11,
+        "startChar": 0,
+        "endLine": 14,
+        "endChar": 14
+      },
+      "revId": "96be79632c70ba1183edc4623e976dfde71d631d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3f1024b1_6e8f8b6a",
+        "filename": "Gra/Ground.hpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1002655
+      },
+      "writtenOn": "2017-11-14T07:43:42Z",
+      "side": 1,
+      "message": "Unused, remove",
+      "range": {
+        "startLine": 15,
+        "startChar": 4,
+        "endLine": 15,
+        "endChar": 14
+      },
+      "revId": "96be79632c70ba1183edc4623e976dfde71d631d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "aa1fd0dd_09d6c91b",
+        "filename": "Gra/Ground.hpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1002655
+      },
+      "writtenOn": "2017-11-14T07:43:42Z",
+      "side": 1,
+      "message": "Use english with \"m*\" notation - \"mRect\"",
+      "range": {
+        "startLine": 16,
+        "startChar": 13,
+        "endLine": 16,
+        "endChar": 23
+      },
+      "revId": "96be79632c70ba1183edc4623e976dfde71d631d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e6eacc99_c843ac10",
+        "filename": "Gra/Ground.hpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1002655
+      },
+      "writtenOn": "2017-11-14T07:43:42Z",
+      "side": 1,
+      "message": "Remove newline",
+      "revId": "96be79632c70ba1183edc4623e976dfde71d631d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6a45e96e_1cb8c41d",
+        "filename": "Gra/Main.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1002655
+      },
+      "writtenOn": "2017-11-14T07:43:42Z",
+      "side": 1,
+      "message": "Missing space between #include and \"Ground.hpp\"",
+      "range": {
+        "startLine": 6,
+        "startChar": 7,
+        "endLine": 6,
+        "endChar": 9
+      },
+      "revId": "96be79632c70ba1183edc4623e976dfde71d631d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e26ff287_71bd02f1",
+        "filename": "Gra/Main.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 1002655
+      },
+      "writtenOn": "2017-11-14T07:43:42Z",
+      "side": 1,
+      "message": "We don\u0027t need this anymore",
+      "range": {
+        "startLine": 76,
+        "startChar": 0,
+        "endLine": 80,
+        "endChar": 36
+      },
+      "revId": "96be79632c70ba1183edc4623e976dfde71d631d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "af71cbe5_bc73d638",
+        "filename": "Gra/Main.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 105,
+      "author": {
+        "id": 1002655
+      },
+      "writtenOn": "2017-11-14T07:43:42Z",
+      "side": 1,
+      "message": "Since we\u0027re already here, move DrawColor below RenderClear. It will be a little bit more organized to do it this way.",
+      "revId": "96be79632c70ba1183edc4623e976dfde71d631d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "813e451a_246f0f31",
+        "filename": "Gra/Main.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 109,
+      "author": {
+        "id": 1002655
+      },
+      "writtenOn": "2017-11-14T07:43:42Z",
+      "side": 1,
+      "message": "I guess you know what to do with these.\n\nI recommend using a \"Trailing Whitespace Visualizer\" plugin to VS, it shows you all of these in red and automatically removes them on save - https://marketplace.visualstudio.com/items?itemName\u003dMadsKristensen.TrailingWhitespaceVisualizer",
+      "revId": "96be79632c70ba1183edc4623e976dfde71d631d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
