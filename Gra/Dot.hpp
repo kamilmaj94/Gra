@@ -4,7 +4,7 @@
 
 // The dot that will move around on the screen
 // Temporary placeholder class for further development
-class Dot
+class Dot : Ground
 {
 public:
     Dot();

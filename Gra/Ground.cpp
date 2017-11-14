@@ -3,6 +3,7 @@
 #include "Globals.hpp"
 
 
+
 Ground::Ground()
 {
     std::default_random_engine generator;
@@ -18,4 +19,9 @@ void Ground::Render()
 {
     SDL_SetRenderDrawColor(gRenderer, 0, 0, 0, 0xFF);
     SDL_RenderFillRect(gRenderer, &mRect);
+}
+
+SDL_Rect Ground::getBody()
+{
+    return mRect;
 }

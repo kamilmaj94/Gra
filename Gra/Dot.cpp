@@ -1,6 +1,7 @@
 #include "PCH.hpp"
 #include "Dot.hpp"
 #include "Globals.hpp"
+#include "Ground.hpp"
 
 Dot::Dot()
     : mPosX(0)
@@ -8,6 +9,35 @@ Dot::Dot()
     , mVelX(0)
     , mVelY(0)
 {
+
+    /*  !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+        This thing SHOULD BE implemented somewhere here.
+        It describes physical material based on basic variables of this object, like
+        size and position in space.
+    *///!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+    // Define the dynamic body. We set its position and call the body factory.
+    b2BodyDef bodyDef;
+    bodyDef.type = b2_dynamicBody;
+    bodyDef.position.Set(mPosX , mPosY);
+    b2Body* body = world.CreateBody(&bodyDef);
+
+    // Define another box shape for our dynamic body.
+    b2PolygonShape dynamicBox;
+    dynamicBox.SetAsBox(1.0f, 1.0f);
+
+    // Define the dynamic body fixture.
+    b2FixtureDef fixtureDef;
+    fixtureDef.shape = &dynamicBox;
+
+    // Set the box density to be non-zero, so it will be dynamic.
+    fixtureDef.density = 1.0f;
+
+    // Override the default friction.
+    fixtureDef.friction = 0.3f;
+
+    // Add the shape to the body.
+    body->CreateFixture(&fixtureDef);
 }
 
 bool Dot::Init()
