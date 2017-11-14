@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "40294de2_33267ed5",
+        "filename": "README.MD",
+        "patchSetId": 3
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1002655
+      },
+      "writtenOn": "2017-11-14T13:53:57Z",
+      "side": 1,
+      "message": "The file is almost perfect.\n\nAdd on top of it a header, which will say:\n\n Simple Game\n \u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n\nThat way, Markdown will make \"Simple Game\" text as header for the file and it will be neatly formatted.",
+      "revId": "d238762c1e1bf23b283840ec51def4b5bde5edc6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
