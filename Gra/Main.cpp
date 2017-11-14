@@ -72,7 +72,39 @@ int main(int argc, char* args[])
 
     SDL_Event e;
     Dot dot;
-    Ground podloga;
+    Ground floor;
+
+    /*
+        DIRTY CODE - needs basically... everything
+    */
+
+    // Define the gravity vector.
+    b2Vec2 gravity(0.0f, -10.0f);
+
+    // Construct a world object, which will hold and simulate the rigid bodies.
+    b2World world(gravity);
+
+    // Define the ground body.
+    b2BodyDef groundBodyDef;
+    groundBodyDef.position.Set(prostokat.x, prostokat.y);
+
+    // Call the body factory which allocates memory for the ground body
+    // from a pool and creates the ground box shape (also from a pool).
+    // The body is also added to the world.
+    b2Body* groundBody = world.CreateBody(&groundBodyDef);
+
+    // Define the ground box shape.
+    b2PolygonShape groundBox;
+
+    // The extents are the half-widths of the box.
+    groundBox.SetAsBox(prostokat.w, prostokat.h);
+
+    // Add the ground fixture to the ground body.
+    groundBody->CreateFixture(&groundBox, 0.0f);
+
+    /*
+        i want to die :DDDD
+    */
 
     if (!dot.Init())
     {
@@ -90,17 +122,24 @@ int main(int argc, char* args[])
                 quit = true;
             }
 
+            if (e.type == SDL_KEYDOWN && e.key.repeat == 0)
+            {
+                if (e.key.keysym.sym == SDLK_ESCAPE)
+                {
+                    quit = true;
+                }
+            }
+
             dot.HandleEvent(e);
         }
         dot.Move();
         SDL_SetRenderDrawColor(gRenderer, 0xFF, 0xFF, 0xFF, 0xFF);
         SDL_RenderClear(gRenderer);
-        
         /*
-            Objects to render are going here
+            Objects to render are going below
         */
         dot.Render();
-        podloga.Render();
+        floor.Render();
         SDL_RenderPresent(gRenderer);
     }
     Close();
