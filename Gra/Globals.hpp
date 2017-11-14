@@ -14,3 +14,4 @@ extern const int SCREEN_HEIGHT;
 #else
 #error "Platform not supported"
 #endif
+#define PI 3.14159265359
