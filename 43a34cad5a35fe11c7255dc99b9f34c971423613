@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "537fbe0e_6bc92572",
+        "filename": "README.MD",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1002655
+      },
+      "writtenOn": "2017-11-14T07:34:52Z",
+      "side": 1,
+      "message": "Add above this line a title formatted in markdown. Example:\n\nSimple Game\n\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\u003d\n\nThe \"\u003d\" signs below the text will make \"Simple Game\" a header to make it stand out.",
+      "revId": "43a34cad5a35fe11c7255dc99b9f34c971423613",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "375a0879_2e39138f",
+        "filename": "README.MD",
+        "patchSetId": 2
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1002655
+      },
+      "writtenOn": "2017-11-14T07:34:52Z",
+      "side": 1,
+      "message": "Remove \"test\"",
+      "revId": "43a34cad5a35fe11c7255dc99b9f34c971423613",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
