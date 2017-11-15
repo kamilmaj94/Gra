@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "c55aeeb3_0e9601ea",
+        "filename": "Gra/Ground.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1012887
+      },
+      "writtenOn": "2017-11-15T07:29:08Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "d29bac37_6354e75c",
+      "revId": "31a14505cad2a2cbcf0dbe5515a3e57873c7fd73",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "a6ec076d_1d1db889",
         "filename": "Gra/Ground.hpp",
         "patchSetId": 2
@@ -30,6 +48,30 @@
       "writtenOn": "2017-11-14T13:57:02Z",
       "side": 1,
       "message": "Unresolved comment from Patch 1.",
+      "range": {
+        "startLine": 11,
+        "startChar": 13,
+        "endLine": 11,
+        "endChar": 22
+      },
+      "revId": "31a14505cad2a2cbcf0dbe5515a3e57873c7fd73",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8e392008_cc162797",
+        "filename": "Gra/Ground.hpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1012887
+      },
+      "writtenOn": "2017-11-15T07:29:08Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a6ec076d_1d1db889",
       "range": {
         "startLine": 11,
         "startChar": 13,
@@ -65,6 +107,30 @@
     },
     {
       "key": {
+        "uuid": "10c44554_44896972",
+        "filename": "Gra/Main.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 1012887
+      },
+      "writtenOn": "2017-11-15T07:29:08Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5bce9c74_537fbbcd",
+      "range": {
+        "startLine": 75,
+        "startChar": 11,
+        "endLine": 75,
+        "endChar": 18
+      },
+      "revId": "31a14505cad2a2cbcf0dbe5515a3e57873c7fd73",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "93fca849_3faef448",
         "filename": "Gra/Main.cpp",
         "patchSetId": 2
@@ -76,6 +142,24 @@
       "writtenOn": "2017-11-14T13:57:02Z",
       "side": 1,
       "message": "Remove",
+      "revId": "31a14505cad2a2cbcf0dbe5515a3e57873c7fd73",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9d7a32a7_8edcb9ac",
+        "filename": "Gra/Main.cpp",
+        "patchSetId": 2
+      },
+      "lineNbr": 98,
+      "author": {
+        "id": 1012887
+      },
+      "writtenOn": "2017-11-15T07:29:08Z",
+      "side": 1,
+      "message": "Removed.",
+      "parentUuid": "93fca849_3faef448",
       "revId": "31a14505cad2a2cbcf0dbe5515a3e57873c7fd73",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
