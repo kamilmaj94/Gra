@@ -1,0 +1,595 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "404150a3_82cf04c4",
+        "filename": "Gra/Dot.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1002655
+      },
+      "writtenOn": "2017-12-11T09:15:11Z",
+      "side": 1,
+      "message": "It\u0027s probably not true now :)",
+      "range": {
+        "startLine": 7,
+        "startChar": 24,
+        "endLine": 7,
+        "endChar": 74
+      },
+      "revId": "509e603a2ba5b1539be53c468b4e7e6f8e57b87f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3d2c9fd4_dfbc27ed",
+        "filename": "Gra/Dot.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1002655
+      },
+      "writtenOn": "2017-12-11T09:15:11Z",
+      "side": 1,
+      "message": "Dear committer,\n\nI guess, since dot is round, a circle would be more appropriate :)",
+      "range": {
+        "startLine": 35,
+        "startChar": 8,
+        "endLine": 36,
+        "endChar": 41
+      },
+      "revId": "509e603a2ba5b1539be53c468b4e7e6f8e57b87f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6f20a9d8_47d28740",
+        "filename": "Gra/Dot.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1002655
+      },
+      "writtenOn": "2017-12-11T09:15:11Z",
+      "side": 1,
+      "message": "Remove",
+      "range": {
+        "startLine": 42,
+        "startChar": 37,
+        "endLine": 42,
+        "endChar": 47
+      },
+      "revId": "509e603a2ba5b1539be53c468b4e7e6f8e57b87f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "04f89028_b186dd19",
+        "filename": "Gra/Dot.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 1002655
+      },
+      "writtenOn": "2017-12-11T09:15:11Z",
+      "side": 1,
+      "message": "I kind of don\u0027t like the fact that you separately use HandleEvent to process some temporary velocity values, and then use Dot::Move() to apply it.\n\nIMHO it should be in one function, HandleEvent would be a better candidate here.",
+      "range": {
+        "startLine": 75,
+        "startChar": 0,
+        "endLine": 75,
+        "endChar": 16
+      },
+      "revId": "509e603a2ba5b1539be53c468b4e7e6f8e57b87f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ce2debf6_76332c62",
+        "filename": "Gra/Dot.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 89,
+      "author": {
+        "id": 1002655
+      },
+      "writtenOn": "2017-12-11T09:15:11Z",
+      "side": 1,
+      "message": "Useless - no need to update position if it\u0027s not applied now",
+      "range": {
+        "startLine": 77,
+        "startChar": 0,
+        "endLine": 89,
+        "endChar": 5
+      },
+      "revId": "509e603a2ba5b1539be53c468b4e7e6f8e57b87f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "54860746_5e4ca515",
+        "filename": "Gra/Dot.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 1002655
+      },
+      "writtenOn": "2017-12-11T09:15:11Z",
+      "side": 1,
+      "message": "Unused code",
+      "range": {
+        "startLine": 95,
+        "startChar": 4,
+        "endLine": 97,
+        "endChar": 32
+      },
+      "revId": "509e603a2ba5b1539be53c468b4e7e6f8e57b87f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "e179b31a_974ece5f",
+        "filename": "Gra/Dot.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 102,
+      "author": {
+        "id": 1002655
+      },
+      "writtenOn": "2017-12-11T09:15:11Z",
+      "side": 1,
+      "message": "Separate arguments with spaces, they\u0027re too dense and too hard to read.",
+      "range": {
+        "startLine": 102,
+        "startChar": 46,
+        "endLine": 102,
+        "endChar": 93
+      },
+      "revId": "509e603a2ba5b1539be53c468b4e7e6f8e57b87f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b64145a7_1f28f4f5",
+        "filename": "Gra/Dot.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 133,
+      "author": {
+        "id": 1002655
+      },
+      "writtenOn": "2017-12-11T09:15:11Z",
+      "side": 1,
+      "message": "Move getters and setters to .hpp, add FORCEINLINE before each function header.",
+      "range": {
+        "startLine": 105,
+        "startChar": 0,
+        "endLine": 133,
+        "endChar": 1
+      },
+      "revId": "509e603a2ba5b1539be53c468b4e7e6f8e57b87f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "1f5a1ee0_3c62ad1a",
+        "filename": "Gra/Dot.hpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1002655
+      },
+      "writtenOn": "2017-12-11T09:15:11Z",
+      "side": 1,
+      "message": "constify the function, like Render() is constified.\n\nKeep getter with getters below.",
+      "range": {
+        "startLine": 16,
+        "startChar": 4,
+        "endLine": 16,
+        "endChar": 22
+      },
+      "revId": "509e603a2ba5b1539be53c468b4e7e6f8e57b87f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d6f1a3e9_db23d3ee",
+        "filename": "Gra/Dot.hpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1002655
+      },
+      "writtenOn": "2017-12-11T09:15:11Z",
+      "side": 1,
+      "message": "const b2Vec2\u0026",
+      "range": {
+        "startLine": 18,
+        "startChar": 21,
+        "endLine": 18,
+        "endChar": 27
+      },
+      "revId": "509e603a2ba5b1539be53c468b4e7e6f8e57b87f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "afaba02a_fde4f9f5",
+        "filename": "Gra/Dot.hpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1002655
+      },
+      "writtenOn": "2017-12-11T09:15:11Z",
+      "side": 1,
+      "message": "const b2Vec2\u0026",
+      "range": {
+        "startLine": 19,
+        "startChar": 21,
+        "endLine": 19,
+        "endChar": 27
+      },
+      "revId": "509e603a2ba5b1539be53c468b4e7e6f8e57b87f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "48e75dd6_cd821c49",
+        "filename": "Gra/Dot.hpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 23,
+      "author": {
+        "id": 1002655
+      },
+      "writtenOn": "2017-12-11T09:15:11Z",
+      "side": 1,
+      "message": "constify",
+      "range": {
+        "startLine": 22,
+        "startChar": 4,
+        "endLine": 23,
+        "endChar": 25
+      },
+      "revId": "509e603a2ba5b1539be53c468b4e7e6f8e57b87f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c2b90435_9ca13855",
+        "filename": "Gra/Dot.hpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1002655
+      },
+      "writtenOn": "2017-12-11T09:15:11Z",
+      "side": 1,
+      "message": "mPosition, mVelocity etc",
+      "range": {
+        "startLine": 30,
+        "startChar": 0,
+        "endLine": 32,
+        "endChar": 18
+      },
+      "revId": "509e603a2ba5b1539be53c468b4e7e6f8e57b87f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0ff7cf07_ba444d5f",
+        "filename": "Gra/Dot.hpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1002655
+      },
+      "writtenOn": "2017-12-11T09:15:11Z",
+      "side": 1,
+      "message": "mBody",
+      "range": {
+        "startLine": 36,
+        "startChar": 4,
+        "endLine": 36,
+        "endChar": 17
+      },
+      "revId": "509e603a2ba5b1539be53c468b4e7e6f8e57b87f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "52109899_478359df",
+        "filename": "Gra/Globals.hpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1002655
+      },
+      "writtenOn": "2017-12-11T09:15:11Z",
+      "side": 1,
+      "message": "newline to separate #endif from #define below",
+      "revId": "509e603a2ba5b1539be53c468b4e7e6f8e57b87f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5dc25258_9185cf86",
+        "filename": "Gra/Ground.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1002655
+      },
+      "writtenOn": "2017-12-11T09:15:11Z",
+      "side": 1,
+      "message": "Unneeded newline, remove",
+      "revId": "509e603a2ba5b1539be53c468b4e7e6f8e57b87f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6a70decc_b44ea4b8",
+        "filename": "Gra/Ground.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1002655
+      },
+      "writtenOn": "2017-12-11T09:15:11Z",
+      "side": 1,
+      "message": "Remove",
+      "revId": "509e603a2ba5b1539be53c468b4e7e6f8e57b87f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "78ebb3a4_16ba68a0",
+        "filename": "Gra/Ground.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1002655
+      },
+      "writtenOn": "2017-12-11T09:15:11Z",
+      "side": 1,
+      "message": "0.0f",
+      "range": {
+        "startLine": 28,
+        "startChar": 28,
+        "endLine": 28,
+        "endChar": 30
+      },
+      "revId": "509e603a2ba5b1539be53c468b4e7e6f8e57b87f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "555180e9_3965dc51",
+        "filename": "Gra/Ground.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1002655
+      },
+      "writtenOn": "2017-12-11T09:15:11Z",
+      "side": 1,
+      "message": "1.0f",
+      "range": {
+        "startLine": 29,
+        "startChar": 29,
+        "endLine": 29,
+        "endChar": 31
+      },
+      "revId": "509e603a2ba5b1539be53c468b4e7e6f8e57b87f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2e7e42d4_2947e3bc",
+        "filename": "Gra/Ground.hpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1002655
+      },
+      "writtenOn": "2017-12-11T09:15:11Z",
+      "side": 1,
+      "message": "You return here Body Definition, not the body itself",
+      "range": {
+        "startLine": 10,
+        "startChar": 4,
+        "endLine": 10,
+        "endChar": 24
+      },
+      "revId": "509e603a2ba5b1539be53c468b4e7e6f8e57b87f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "534c0db9_689196a3",
+        "filename": "Gra/Ground.hpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1002655
+      },
+      "writtenOn": "2017-12-11T09:15:11Z",
+      "side": 1,
+      "message": "For all getters:\n* Definition here\n* FORCEINLINE\n* constify",
+      "revId": "509e603a2ba5b1539be53c468b4e7e6f8e57b87f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "946d5914_22f0d4f6",
+        "filename": "Gra/Main.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1002655
+      },
+      "writtenOn": "2017-12-11T09:15:11Z",
+      "side": 1,
+      "message": "You forgot that it\u0027s also early access closed kickstarter-exclusive $1000 backer edition",
+      "revId": "509e603a2ba5b1539be53c468b4e7e6f8e57b87f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f5383561_de4bf21c",
+        "filename": "Gra/Main.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 94,
+      "author": {
+        "id": 1002655
+      },
+      "writtenOn": "2017-12-11T09:15:11Z",
+      "side": 1,
+      "message": "Not true. Our timestep should be calculated within the message loop below with an appropriate timer module. That way, if we happen to disable vsync, or someone will enforce disabled vsync through drivers, everything will work 100x faster than usual.\n\nI would prefer measuring this with QueryPerformance functions from WinAPI.",
+      "range": {
+        "startLine": 91,
+        "startChar": 0,
+        "endLine": 94,
+        "endChar": 36
+      },
+      "revId": "509e603a2ba5b1539be53c468b4e7e6f8e57b87f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "cc9e4618_2514a5d5",
+        "filename": "Gra/Main.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 116,
+      "author": {
+        "id": 1002655
+      },
+      "writtenOn": "2017-12-11T09:15:11Z",
+      "side": 1,
+      "message": "Move this to separate function. I think it might grow with time, that way we\u0027ll unclutter main a little bit.",
+      "range": {
+        "startLine": 100,
+        "startChar": 8,
+        "endLine": 116,
+        "endChar": 9
+      },
+      "revId": "509e603a2ba5b1539be53c468b4e7e6f8e57b87f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4bfde8ea_15fd19fa",
+        "filename": "Gra/Main.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 119,
+      "author": {
+        "id": 1002655
+      },
+      "writtenOn": "2017-12-11T09:15:11Z",
+      "side": 1,
+      "message": "Since probably dot.Move() will be removed, I would move this above polling events from SDL.",
+      "range": {
+        "startLine": 119,
+        "startChar": 8,
+        "endLine": 119,
+        "endChar": 69
+      },
+      "revId": "509e603a2ba5b1539be53c468b4e7e6f8e57b87f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "087a51f1_3212ff25",
+        "filename": "Gra/Main.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 121,
+      "author": {
+        "id": 1002655
+      },
+      "writtenOn": "2017-12-11T09:15:11Z",
+      "side": 1,
+      "message": "This should happen within Dot itself, preferably at dot.Render()",
+      "range": {
+        "startLine": 121,
+        "startChar": 8,
+        "endLine": 121,
+        "endChar": 48
+      },
+      "revId": "509e603a2ba5b1539be53c468b4e7e6f8e57b87f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6dec893d_ce6ff37f",
+        "filename": "Gra/Texture.cpp",
+        "patchSetId": 3
+      },
+      "lineNbr": 86,
+      "author": {
+        "id": 1002655
+      },
+      "writtenOn": "2017-12-11T09:15:11Z",
+      "side": 1,
+      "message": "This conversion might be used often. I suggest adding a macro function in Globals.hpp called RAD_TO_DEGREES.",
+      "range": {
+        "startLine": 86,
+        "startChar": 61,
+        "endLine": 86,
+        "endChar": 78
+      },
+      "revId": "509e603a2ba5b1539be53c468b4e7e6f8e57b87f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
