@@ -5,6 +5,9 @@
 #include "Dot.hpp"
 #include "Ground.hpp"
 
+bool gKeys[512];
+bool gQuit = false;
+
 bool Init()
 {
     if(SDL_Init(SDL_INIT_VIDEO) < 0)
@@ -44,6 +47,37 @@ bool Init()
     return true;
 }
 
+void HandleEvents()
+{
+    SDL_Event e;
+
+    while (SDL_PollEvent(&e) != 0)
+    {
+        if (e.type == SDL_QUIT)
+        {
+            gQuit = true;
+        }
+
+        if (e.type == SDL_KEYDOWN && e.key.repeat == 0)
+        {
+            if (e.key.keysym.sym == SDLK_ESCAPE)
+            {
+                gQuit = true;
+            }
+        }
+
+        if (e.type == SDL_KEYDOWN)
+        {
+            gKeys[e.key.keysym.scancode] = true;
+        }
+
+        if (e.type == SDL_KEYUP)
+        {
+            gKeys[e.key.keysym.scancode] = false;
+        }
+    }
+}
+
 void Close()
 {
     SDL_DestroyRenderer(gRenderer);
@@ -55,24 +89,6 @@ void Close()
     SDL_Quit();
 }
 
-void HandlerLoop(SDL_Event &e, bool &quit)
-{
-    while (SDL_PollEvent(&e) != 0)
-    {
-        if (e.type == SDL_QUIT)
-        {
-            quit = true;
-        }
-
-        if (e.type == SDL_KEYDOWN && e.key.repeat == 0)
-        {
-            if (e.key.keysym.sym == SDLK_ESCAPE)
-            {
-                quit = true;
-            }
-        }
-    }
-}
 int main(int argc, char* args[])
 {
     if (!Utils::FS::SetCWD(Utils::FS::GetExecutableDir() + "/../../../"))
@@ -87,16 +103,14 @@ int main(int argc, char* args[])
         return 1;
     }
 
-    bool quit = false;
     // Construct a world object, which will hold and simulate the rigid bodies.
     // Define the gravity vector.
     b2Vec2 gravity(0.0f, 100.0f);
     b2World world(gravity);
 
-    SDL_Event e;
-    Dot dot;
     Ground floor(world);
 
+    Dot dot;
     if (!dot.Init(world))
     {
         std::cout << "Failed to initialize Dot" << std::endl;
@@ -105,31 +119,54 @@ int main(int argc, char* args[])
         return 2;
     }
 
-    // Prepare for simulation. Typically we use a time step of 1/60 of a
-    // second (60Hz) and 10 iterations. This provides a high quality simulation
-    // in most game scenarios.
+    // TODO timestep should be measured from frame time
     float32 timeStep = 1.0f / 60.0f;
     int32 velocityIterations = 6;
     int32 positionIterations = 2;
 
-    while (!quit)
-    {
+    for (uint32_t i = 0; i < 512; ++i)
+        gKeys[i] = false;
 
-        HandlerLoop(e, quit);
-        dot.HandleEvent(e);
-        // Instruct the world to perform a single step of simulation.
-        // It is generally best to keep the time step and iterations fixed.
+    while (!gQuit)
+    {
+        /////////////////////
+        // UPDATING EVENTS //
+        /////////////////////
+
+        // process window events (pressed keys etc)
+        HandleEvents();
+
+        // update Dot according to pressed keys
+        if (gKeys[SDL_SCANCODE_UP])
+            dot.ApplyMoveDirection(b2Vec2(0.0f, -1.0f));
+        if (gKeys[SDL_SCANCODE_LEFT])
+            dot.ApplyMoveDirection(b2Vec2(-1.0f, 0));
+        if (gKeys[SDL_SCANCODE_RIGHT])
+            dot.ApplyMoveDirection(b2Vec2(1.0f, 0));
+
+        // reflect velocity in Dot's body
+        dot.Update();
+
+        // physics simulation step
         world.Step(timeStep, velocityIterations, positionIterations);
 
+        ///////////////
+        // RENDERING //
+        ///////////////
+
+        // prepare frame
         SDL_SetRenderDrawColor(gRenderer, 0xFF, 0xFF, 0xFF, 0xFF);
         SDL_RenderClear(gRenderer);
-        /*
-            Objects to render are going below
-        */
+
+        // draw objects
         dot.Render();
         floor.Render();
+
+        // show on screen
         SDL_RenderPresent(gRenderer);
     }
+
     Close();
+
     return 0;
 }

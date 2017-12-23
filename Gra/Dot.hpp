@@ -2,31 +2,31 @@
 
 #include "Texture.hpp"
 
-// The dot that will move around on the screen
-// Temporary placeholder class for further development
 class Dot
 {
 public:
     Dot();
 
     bool Init(b2World& world);
-    void HandleEvent( SDL_Event& e );
-    //void Move(SDL_Event& e);
+    void Update();
     void Render() const;
 
     FORCEINLINE void SetPosition(b2Vec2 position)
     {
-        mBody->SetTransform(position, angle);
-    }
-
-    FORCEINLINE void SetVelocity(b2Vec2 velocity)
-    {
-        mBody->SetLinearVelocity(velocity);
+        mBody->SetTransform(position, mAngle);
     }
 
     FORCEINLINE void SetAngle(float32 angle)
     {
-        this->angle = angle;
+        mAngle = angle;
+    }
+
+    // You tell the direction and value -1..1, this is scaled
+    // according to DOT_VEL and accumulated for later update.
+    FORCEINLINE void ApplyMoveDirection(b2Vec2 vel)
+    {
+        mVel.x += DOT_VEL * vel.x;
+        mVel.y += DOT_VEL * vel.y;
     }
 
     FORCEINLINE b2Body *GetBody() const
@@ -34,26 +34,13 @@ public:
         return mBody;
     }
 
-    FORCEINLINE b2Vec2 GetPosition() const
-    {
-        return position;
-    }
-
-    FORCEINLINE b2Vec2 GetVelocity() const
-    {
-        return velocity;
-    }
-
 private:
     static const int DOT_WIDTH = 20;
     static const int DOT_HEIGHT = 20;
-    static const int DOT_VEL = 1000000;
+    static const int DOT_VEL = 100000;
 
-    b2Vec2 position;
-    b2Vec2 velocity;
-    float32 angle;
-
+    float32 mAngle;
+    b2Vec2 mVel;
     Texture mDotTexture;
-
     b2Body* mBody;
 };
