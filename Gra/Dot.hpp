@@ -7,26 +7,27 @@
 class Dot
 {
 public:
+    static const int DOT_VEL = 100000;
+
     Dot();
 
     bool Init(b2World& world);
-    void HandleEvent( SDL_Event& e );
-    //void Move(SDL_Event& e);
+    void Move();
     void Render() const;
 
     FORCEINLINE void SetPosition(b2Vec2 position)
     {
-        mBody->SetTransform(position, angle);
-    }
-
-    FORCEINLINE void SetVelocity(b2Vec2 velocity)
-    {
-        mBody->SetLinearVelocity(velocity);
+        mBody->SetTransform(position, mAngle);
     }
 
     FORCEINLINE void SetAngle(float32 angle)
     {
-        this->angle = angle;
+        mAngle = angle;
+    }
+
+    FORCEINLINE void ApplyVelocity(b2Vec2 vel)
+    {
+        mVel += vel;
     }
 
     FORCEINLINE b2Body *GetBody() const
@@ -34,26 +35,12 @@ public:
         return mBody;
     }
 
-    FORCEINLINE b2Vec2 GetPosition() const
-    {
-        return position;
-    }
-
-    FORCEINLINE b2Vec2 GetVelocity() const
-    {
-        return velocity;
-    }
-
 private:
     static const int DOT_WIDTH = 20;
     static const int DOT_HEIGHT = 20;
-    static const int DOT_VEL = 1000000;
 
-    b2Vec2 position;
-    b2Vec2 velocity;
-    float32 angle;
-
+    float32 mAngle;
+    b2Vec2 mVel;
     Texture mDotTexture;
-
     b2Body* mBody;
 };

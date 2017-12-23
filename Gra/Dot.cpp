@@ -4,9 +4,8 @@
 #include "Ground.hpp"
 
 Dot::Dot()
-    : position(320,240)
-    , velocity(0,0)
-    , angle(0)
+    : mAngle(0)
+    , mVel(0, 0)
 {
 
 }
@@ -22,7 +21,7 @@ bool Dot::Init(b2World& world)
         // Define the dynamic mBody. We set its position and call the mBody factory.
         b2BodyDef mBodyDef;
         mBodyDef.type = b2_dynamicBody;
-        mBodyDef.position.Set(position.x, position.y);
+        mBodyDef.position.Set(320, 240);
         mBody = world.CreateBody(&mBodyDef);
         // Define circle shape for our dynamic mBody.
         b2CircleShape dynamicCircle;
@@ -40,53 +39,10 @@ bool Dot::Init(b2World& world)
     return true;
 }
 
-void Dot::HandleEvent(SDL_Event& e)
+void Dot::Move()
 {
-
-    //mBody->ApplyLinearImpulse(velocity, mBody->GetWorldCenter(), 1);
-    //mBody->ApplyAngularImpulse(100, 1);
-    //mBody->ApplyTorque(100, 1);
-
-    if (e.type == SDL_KEYDOWN && e.key.repeat == 0)
-    {
-        switch (e.key.keysym.sym)
-        {
-        case SDLK_UP: velocity.y -= DOT_VEL; break;
-        case SDLK_DOWN: velocity.y += DOT_VEL; break;
-        case SDLK_LEFT: velocity.x -= DOT_VEL; break;
-        case SDLK_RIGHT: velocity.x += DOT_VEL; break;
-        }
-    }
-    else if (e.type == SDL_KEYUP && e.key.repeat == 0)
-    {
-        switch (e.key.keysym.sym)
-        {
-        case SDLK_UP: velocity.y += DOT_VEL; break;
-        case SDLK_DOWN: velocity.y -= DOT_VEL; break;
-        case SDLK_LEFT: velocity.x += DOT_VEL; break;
-        case SDLK_RIGHT: velocity.x -= DOT_VEL; break;
-        }
-    }
-
-	//dot.move part
-	position.x += velocity.x;
-	if ((position.x < 0) ||
-		(position.x + DOT_WIDTH > SCREEN_WIDTH))
-	{
-		position.x -= velocity.x;
-	}
-
-	position.y += velocity.y;
-	if ((position.y < 0) ||
-		(position.y + DOT_HEIGHT > SCREEN_HEIGHT))
-	{
-		position.y -= velocity.y;
-	}
-
-	/*
-	TYPES OF MOVEMENT - needs further investigation
-	*/
-	mBody->ApplyForce(velocity, mBody->GetWorldCenter(), 1);
+    mBody->ApplyForce(mVel, mBody->GetWorldCenter(), 1);
+    mVel = b2Vec2(0, 0);
 }
 
 void Dot::Render() const

@@ -55,24 +55,6 @@ void Close()
     SDL_Quit();
 }
 
-void HandlerLoop(SDL_Event &e, bool &quit)
-{
-    while (SDL_PollEvent(&e) != 0)
-    {
-        if (e.type == SDL_QUIT)
-        {
-            quit = true;
-        }
-
-        if (e.type == SDL_KEYDOWN && e.key.repeat == 0)
-        {
-            if (e.key.keysym.sym == SDLK_ESCAPE)
-            {
-                quit = true;
-            }
-        }
-    }
-}
 int main(int argc, char* args[])
 {
     if (!Utils::FS::SetCWD(Utils::FS::GetExecutableDir() + "/../../../"))
@@ -112,11 +94,46 @@ int main(int argc, char* args[])
     int32 velocityIterations = 6;
     int32 positionIterations = 2;
 
+    bool keys[512];
+    for (uint32_t i = 0; i < 512; ++i)
+        keys[i] = false;
+
     while (!quit)
     {
+        while (SDL_PollEvent(&e) != 0)
+        {
+            if (e.type == SDL_QUIT)
+            {
+                quit = true;
+            }
 
-        HandlerLoop(e, quit);
-        dot.HandleEvent(e);
+            if (e.type == SDL_KEYDOWN && e.key.repeat == 0)
+            {
+                if (e.key.keysym.sym == SDLK_ESCAPE)
+                {
+                    quit = true;
+                }
+            }
+
+            if (e.type == SDL_KEYDOWN)
+            {
+                keys[e.key.keysym.scancode] = true;
+            }
+
+            if (e.type == SDL_KEYUP)
+            {
+                keys[e.key.keysym.scancode] = false;
+            }
+        }
+
+        if (keys[SDL_SCANCODE_UP])
+            dot.ApplyVelocity(b2Vec2(0,-Dot::DOT_VEL));
+        if (keys[SDL_SCANCODE_LEFT])
+            dot.ApplyVelocity(b2Vec2(-Dot::DOT_VEL, 0));
+        if (keys[SDL_SCANCODE_RIGHT])
+            dot.ApplyVelocity(b2Vec2(Dot::DOT_VEL, 0));
+
+        dot.Move();
         // Instruct the world to perform a single step of simulation.
         // It is generally best to keep the time step and iterations fixed.
         world.Step(timeStep, velocityIterations, positionIterations);
