@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d24eafd7_da411418",
+        "filename": "Gra/Dot.hpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1012887
+      },
+      "writtenOn": "2017-12-26T20:04:40Z",
+      "side": 1,
+      "message": "Ｒｅｍｏｖｅ．",
+      "range": {
+        "startLine": 5,
+        "startChar": 0,
+        "endLine": 6,
+        "endChar": 54
+      },
+      "revId": "f20d53110a9d30ea86c8bca10237c3d2d250120c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "400afaa4_b8d92bf9",
+        "filename": "Gra/Dot.hpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1012887
+      },
+      "writtenOn": "2017-12-26T20:04:40Z",
+      "side": 1,
+      "message": "That parameter should depend from mBody probably?",
+      "range": {
+        "startLine": 10,
+        "startChar": 4,
+        "endLine": 10,
+        "endChar": 38
+      },
+      "revId": "f20d53110a9d30ea86c8bca10237c3d2d250120c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a9fe9318_d4475065",
+        "filename": "Gra/Main.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 136,
+      "author": {
+        "id": 1012887
+      },
+      "writtenOn": "2017-12-26T20:04:40Z",
+      "side": 1,
+      "message": "Entire section should be converted back to \"classic\" working version.",
+      "range": {
+        "startLine": 103,
+        "startChar": 1,
+        "endLine": 136,
+        "endChar": 19
+      },
+      "revId": "f20d53110a9d30ea86c8bca10237c3d2d250120c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
