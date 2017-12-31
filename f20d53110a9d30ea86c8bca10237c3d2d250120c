@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "6bdc8cc9_fc1569f4",
+        "filename": "Gra/Dot.hpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1002655
+      },
+      "writtenOn": "2017-12-31T12:50:15Z",
+      "side": 1,
+      "message": "http://zabkiposasiedzku.pl/wp-content/uploads/2016/08/Logo_new_green.png",
+      "parentUuid": "d24eafd7_da411418",
+      "range": {
+        "startLine": 5,
+        "startChar": 0,
+        "endLine": 6,
+        "endChar": 54
+      },
+      "revId": "f20d53110a9d30ea86c8bca10237c3d2d250120c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "400afaa4_b8d92bf9",
         "filename": "Gra/Dot.hpp",
         "patchSetId": 1
@@ -48,6 +72,30 @@
     },
     {
       "key": {
+        "uuid": "3ef16b42_8bb3d046",
+        "filename": "Gra/Dot.hpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1002655
+      },
+      "writtenOn": "2017-12-31T12:50:15Z",
+      "side": 1,
+      "message": "I agree, it shouldn\u0027t be public. I\u0027ll move it somewhere else.",
+      "parentUuid": "400afaa4_b8d92bf9",
+      "range": {
+        "startLine": 10,
+        "startChar": 4,
+        "endLine": 10,
+        "endChar": 38
+      },
+      "revId": "f20d53110a9d30ea86c8bca10237c3d2d250120c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "a9fe9318_d4475065",
         "filename": "Gra/Main.cpp",
         "patchSetId": 1
@@ -59,6 +107,30 @@
       "writtenOn": "2017-12-26T20:04:40Z",
       "side": 1,
       "message": "Entire section should be converted back to \"classic\" working version.",
+      "range": {
+        "startLine": 103,
+        "startChar": 1,
+        "endLine": 136,
+        "endChar": 19
+      },
+      "revId": "f20d53110a9d30ea86c8bca10237c3d2d250120c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "13240bf5_a93d861c",
+        "filename": "Gra/Main.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 136,
+      "author": {
+        "id": 1002655
+      },
+      "writtenOn": "2017-12-31T12:50:15Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a9fe9318_d4475065",
       "range": {
         "startLine": 103,
         "startChar": 1,
