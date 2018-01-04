@@ -49,6 +49,30 @@
     },
     {
       "key": {
+        "uuid": "eb98d229_7abcdea3",
+        "filename": "Gra/Dot.hpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1012887
+      },
+      "writtenOn": "2018-01-04T21:45:47Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6bdc8cc9_fc1569f4",
+      "range": {
+        "startLine": 5,
+        "startChar": 0,
+        "endLine": 6,
+        "endChar": 54
+      },
+      "revId": "f20d53110a9d30ea86c8bca10237c3d2d250120c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "400afaa4_b8d92bf9",
         "filename": "Gra/Dot.hpp",
         "patchSetId": 1
@@ -84,6 +108,30 @@
       "side": 1,
       "message": "I agree, it shouldn\u0027t be public. I\u0027ll move it somewhere else.",
       "parentUuid": "400afaa4_b8d92bf9",
+      "range": {
+        "startLine": 10,
+        "startChar": 4,
+        "endLine": 10,
+        "endChar": 38
+      },
+      "revId": "f20d53110a9d30ea86c8bca10237c3d2d250120c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9b9fcc3a_02fa71d8",
+        "filename": "Gra/Dot.hpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1012887
+      },
+      "writtenOn": "2018-01-04T21:45:47Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "3ef16b42_8bb3d046",
       "range": {
         "startLine": 10,
         "startChar": 4,
